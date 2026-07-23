@@ -21,16 +21,14 @@ int main()
   	list[i] = (a / c) % 10;
   }
   int e = num / 2;
+  int aaa = 1 ;
   for (int g = 0;  g < e;  g++)
   {
-	  if (list[g]==list[num-1-g])
+	  if (list[g]!=list[num-1-g])
 	  {
-	  	printf("%d是回文数",a);
-	  }
-    else
-    {
-      printf("%d不是回文数",a);
-    }
+	  	aaa = 0;
+		}
   } 
+	printf("%d%s回文数",a,aaa?"是":"不是");
 }
 //以上为未修改版本
